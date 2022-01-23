@@ -12,7 +12,7 @@ print("The length of the string is:",len(string))
 #b. Reversing the order of the string
 print(string[::-1])
 
-#c. Storing "a case sensitive in a new string"
+#c. Storing "a case sensitive" in a new string
 string2 = string[10:26]
 print(string2)
 
@@ -79,7 +79,10 @@ num2 = int(input("Enter the second number: ")) #second number
 num3 = int(input("Enter the third number: ")) #third number
 
 #Applying conditions for the comparison
-if num1>=num2 and num1>=num3:
+if num1==num2 and num2==num3:
+    print("All the numbers are equal")
+
+elif num1>=num2 and num1>=num3:
     print(num1,"is the greatest")
 
 elif num2>=num1 and num2>=num3:
