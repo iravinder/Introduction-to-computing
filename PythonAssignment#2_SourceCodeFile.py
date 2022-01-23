@@ -91,24 +91,15 @@ else:
 
 #======================================== Question5 ========================================
 
-#Asking user for the string
-input_string = str(input("Enter the string: "))
+#Asking user for the string as input
+string = str(input("Enter the string: "))
 
-#length of the entered string
-length = len(input_string)
-
-#Index of the 'name' substring in the string entered by the user
-name_index = input_string.find("name")
-
-'''Since the indexing start from '0' in python then 
-the index of the last character in the entered string will be (length-1)'''
-
-#Applying condition whether the name_index lies in range of 0 to length-1
-if (name_index>=0 & name_index<=(length-1)):
-    print("Yes, 'name' is present in the entered string")
+#Applying condition if 'name' is present in the string entered by the user
+if("name" in string):
+    print("Yes, 'name' is present in the string")
 
 else:
-    print("No, 'name' is not present in the entered string")
+    print("No, 'name' is not present in the string")
 
 
 #======================================== Question6 ========================================
